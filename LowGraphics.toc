@@ -1,0 +1,11 @@
+## Interface: 70100
+
+## Title: |cff88ff88LowGraphics
+
+## Notes: |cff22ffffgraphics pls!!!
+## SavedVariables: LowGraphicsIgnoreList
+
+LowGraphics.xml
+LowGraphics.lua
+LowGraphicsClient.lua
+LowGraphicsServer.lua
