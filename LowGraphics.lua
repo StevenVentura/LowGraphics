@@ -15,6 +15,19 @@ function slashLowGraphics(msg,editbox)
 command, rest = msg:match("^(%S*)%s*(.-)$");
 --http://wowwiki.wikia.com/wiki/Console_variables
 
+
+if (command == "very") then
+
+ChatFrame1EditBox:SetParent(WorldFrame)
+ToggleFrame(UIParent)
+WorldFrame:ClearAllPoints(); WorldFrame:SetPoint("CENTER"); WorldFrame:SetSize(1,1)
+command = low;--now fall down and do all of the "low" stuff too
+else
+WorldFrame:SetAllPoints();
+UIParent:Show();
+ChatFrame1EditBox:SetParent(UIParent)
+end
+
 if (command == "low") then
 SetCVar("renderScale",0.1)
 
@@ -133,7 +146,7 @@ end
 if (pandaDanceTimer > 1 and movedPanda) then
 movedPanda=false;
 pandaDanceTimer=0;
-DoEmote("dance");
+--DoEmote("dance");
 
 end
 
